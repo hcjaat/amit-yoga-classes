@@ -6,7 +6,7 @@ import { fadeInUp } from '@/lib/animations';
 
 export default function QuoteBanner() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-6 sm:px-8 bg-yoga-bg relative overflow-hidden border-b border-yoga-accent/10">
+    <section className="py-16 sm:py-20 md:py-24 px-6 sm:px-8 bg-yoga-bg relative overflow-hidden border-b border-yoga-accent/10">
       {/* Subtle decorative background circle */}
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[500px] h-[280px] sm:h-[500px] bg-yoga-accent/5 rounded-full blur-3xl pointer-events-none"
@@ -31,8 +31,8 @@ export default function QuoteBanner() {
           </motion.div>
 
           {/* Deep italicized serif quote text */}
-          <blockquote className="font-serif text-lg sm:text-2xl md:text-3xl lg:text-4xl italic text-yoga-primary font-medium leading-relaxed mb-4 sm:mb-6 max-w-3xl">
-            &ldquo;Your <span className="text-yoga-secondary not-italic font-semibold">body</span> exists in the past and your <span className="text-yoga-secondary not-italic font-semibold">mind</span> exists in the future. In <span className="text-yoga-secondary not-italic font-semibold">yoga</span>, they come together in the <span className="text-yoga-secondary not-italic font-semibold">present</span>.&rdquo;
+          <blockquote className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-yoga-primary font-medium leading-relaxed mb-4 sm:mb-6 max-w-3xl">
+            Your <span className="text-yoga-secondary not-italic font-semibold">body</span> exists in the past and your <span className="text-yoga-secondary not-italic font-semibold">mind</span> exists in the future. In <span className="text-yoga-secondary not-italic font-semibold">yoga</span>, they come together in the <span className="text-yoga-secondary not-italic font-semibold">present</span>.
           </blockquote>
 
           {/* Author Name */}
