@@ -7,6 +7,7 @@ import { Phone, MessageCircle } from 'lucide-react';
 import { fadeInUp } from '@/lib/animations';
 
 const heroImages = [
+  '/images/yoga/yoga-pose1.webp',
   '/images/center-yoga.webp',
   '/images/yoga/1.webp',
   '/images/yoga/mountaintop-meditation.webp',
