@@ -165,7 +165,7 @@ export default function Hero() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 pt-20">
+      <div className="absolute inset-0 flex flex-col items-center justify-start md:justify-center px-4 pt-24 md:pt-20">
         <motion.div
           className="text-center max-w-2xl"
           variants={fadeInUp}
