@@ -7,7 +7,6 @@ import { Phone, MessageCircle } from 'lucide-react';
 import { fadeInUp } from '@/lib/animations';
 
 const heroImages = [
-  '/images/yoga/yoga-pose1.webp',
   '/images/center-yoga.webp',
   '/images/yoga/1.webp',
   '/images/yoga/mountaintop-meditation.webp',
@@ -17,6 +16,7 @@ const heroImages = [
   '/images/yoga/bridge-plank.webp',
   '/images/yoga/outdoor-stretch.webp',
   '/images/yoga/headstand.webp',
+  '/images/yoga/yoga-pose1.webp',
 ];
 
 function Typewriter({ phrases, className, startDelay = 0 }: { phrases: string[]; className?: string; startDelay?: number }) {
