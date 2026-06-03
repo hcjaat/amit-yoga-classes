@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight, Expand } from 'lucide-react';
 import { fadeInUp } from '@/lib/animations';
 
 const galleryImages = [
+  { id: 10, src: '/images/center-yoga.webp', alt: 'Central Yoga Pose' },
   { id: 1, src: '/images/yoga/1.webp', alt: 'Yoga Pose 1' },
   { id: 2, src: '/images/yoga/2.webp', alt: 'Yoga Pose 2' },
   { id: 3, src: '/images/yoga/temple-yoga.webp', alt: 'Temple Yoga Pose' },
