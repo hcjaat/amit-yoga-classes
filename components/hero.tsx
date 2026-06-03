@@ -8,6 +8,7 @@ import { fadeInUp } from '@/lib/animations';
 
 const heroImages = [
   '/images/center-yoga.webp',
+  '/images/yoga/yoga-pose2.webp',
   '/images/yoga/1.webp',
   '/images/yoga/mountaintop-meditation.webp',
   '/images/yoga/mountaintop-warrior.webp',
