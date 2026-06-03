@@ -186,7 +186,7 @@ export default function Hero() {
                 'Begin Your Journey to Inner Peace',
                 'Strengthen Body, Calm Mind',
                 'Discover the Power of Breath',
-                'Your body exists in the past, your mind in the future. In yoga they come together in the present.',
+                'Transform Body, Mind & Soul',
               ]}
             />
           </p>
