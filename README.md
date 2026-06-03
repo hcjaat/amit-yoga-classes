@@ -3,6 +3,8 @@
 A modern, single-page yoga studio website built with **Next.js** and deployed on **Netlify**.
 
 > 🧘 This is a client project — a professional website built **for** Amit Sir (Government Certified Yoga Instructor) by [Hemant Choudhary](https://github.com/hcjaat).
+>
+> 🔗 **Live site:** [amit-yoga-classes.netlify.app](https://amit-yoga-classes.netlify.app)
 
 ## 🧘 About
 
