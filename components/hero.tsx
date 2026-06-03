@@ -174,10 +174,10 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
         >
           <p className="text-yoga-accent text-sm md:text-base font-semibold tracking-widest uppercase mb-4">
-            AMIT&apos;S YOGA CLASSES — Mahesh Nagar, Jaipur
+            AMIT&apos;S YOGA CLASSES — Mahesh Nagar, Jaipur | Open 5:30 AM - 8:30 PM Mon-Sat
           </p>
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Transform Your Mind, Body & Soul
+            Yoga, Meditation & Wellness Classes in Jaipur
           </h1>
           <p className="text-xl md:text-2xl text-gray-100 mb-4 font-light min-h-[2.5rem]">
             <Typewriter
@@ -192,7 +192,7 @@ export default function Hero() {
           </p>
           <p className="text-lg text-gray-200 mb-10 min-h-[1.75rem]">
             <Typewriter
-              phrases={['Government Certified Yoga Instructor • 5+ Years Experience • 800+ Sessions']}
+              phrases={['Government Certified Yoga Instructor • Affordable Fees • 5+ Years • Call/WhatsApp 9352600526']}
               startDelay={26000}
             />
           </p>
