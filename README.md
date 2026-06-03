@@ -1,6 +1,8 @@
-# Amit's Yoga Classes
+# Amit's Yoga Classes — Website
 
 A modern, single-page yoga studio website built with **Next.js** and deployed on **Netlify**.
+
+> 🧘 This is a client project — a professional website built **for** Amit Sir (Government Certified Yoga Instructor) by [Hemant Choudhary](https://github.com/hcjaat).
 
 ## 🧘 About
 
@@ -56,4 +58,4 @@ npx next build
 
 ## 📄 License
 
-This project is for **Amit's Yoga Classes**. All rights reserved.
+This project is a client website built **for Amit's Yoga Classes**. All rights reserved.
