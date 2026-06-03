@@ -179,14 +179,14 @@ export default function Hero() {
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Yoga, Meditation & Wellness Classes in Jaipur
           </h1>
-          <p className="text-xl md:text-2xl text-gray-100 mb-4 font-light min-h-[2.5rem]">
+          <p className="text-xl md:text-2xl text-gray-100 mb-4 font-light min-h-[7rem] md:min-h-[4rem]">
             <Typewriter
               phrases={[
                 'Through Certified Yoga & Wellness Training',
                 'Begin Your Journey to Inner Peace',
                 'Strengthen Body, Calm Mind',
                 'Discover the Power of Breath',
-                'Transform Body, Mind & Soul',
+                'Your body exists in the past, your mind in the future. In yoga they come together in the present.',
               ]}
             />
           </p>
