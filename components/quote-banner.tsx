@@ -6,7 +6,7 @@ import { fadeInUp } from '@/lib/animations';
 
 export default function QuoteBanner() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-6 sm:px-8 bg-yoga-bg relative overflow-hidden border-b border-yoga-accent/10">
+    <section className="py-8 sm:py-12 md:py-16 px-6 sm:px-8 bg-yoga-bg relative overflow-hidden border-b border-yoga-accent/10">
       {/* Subtle decorative background circle */}
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[500px] h-[280px] sm:h-[500px] bg-yoga-accent/5 rounded-full blur-3xl pointer-events-none"
@@ -27,16 +27,16 @@ export default function QuoteBanner() {
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <Quote className="w-8 h-8 sm:w-12 sm:h-12 text-yoga-secondary/20 mb-4 sm:mb-6 rotate-180" />
+            <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-yoga-secondary/20 mb-2 sm:mb-4 rotate-180" />
           </motion.div>
 
           {/* Deep italicized serif quote text */}
-          <blockquote className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-yoga-primary font-medium leading-relaxed mb-4 sm:mb-6 max-w-3xl">
+          <blockquote className="font-serif text-sm sm:text-base md:text-lg lg:text-xl italic text-yoga-primary font-medium leading-relaxed mb-2 sm:mb-4 max-w-3xl">
             Your <span className="text-yoga-secondary not-italic font-semibold">body</span> exists in the past and your <span className="text-yoga-secondary not-italic font-semibold">mind</span> exists in the future. In <span className="text-yoga-secondary not-italic font-semibold">yoga</span>, they come together in the <span className="text-yoga-secondary not-italic font-semibold">present</span>.
           </blockquote>
 
           {/* Author Name */}
-          <cite className="not-italic text-xs sm:text-sm font-semibold tracking-widest uppercase text-gray-500 block">
+          <cite className="not-italic text-[10px] sm:text-xs font-semibold tracking-widest uppercase text-gray-500 block">
             &mdash; B.K.S. Iyengar
           </cite>
         </motion.div>

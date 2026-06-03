@@ -173,13 +173,13 @@ export default function Hero() {
           animate="visible"
           transition={{ delay: 0.3 }}
         >
-          <p className="text-yoga-accent text-sm md:text-base font-semibold tracking-widest uppercase mb-4">
-            AMIT&apos;S YOGA CLASSES — Mahesh Nagar, Jaipur | Open 5:30 AM - 8:30 PM Mon-Sat
+          <p className="text-yoga-accent text-xs md:text-base font-semibold tracking-widest uppercase mb-2 md:mb-4">
+            AMIT&apos;S YOGA CLASSES — Mahesh Nagar, Jaipur
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
             Yoga, Meditation & Wellness Classes in Jaipur
           </h1>
-          <p className="text-xl md:text-2xl text-gray-100 mb-4 font-light min-h-[7rem] md:min-h-[4rem]">
+          <p className="text-base md:text-xl lg:text-2xl text-gray-100 mb-2 md:mb-4 font-light min-h-[2rem] md:min-h-[3rem]">
             <Typewriter
               phrases={[
                 'Through Certified Yoga & Wellness Training',
@@ -190,9 +190,9 @@ export default function Hero() {
               ]}
             />
           </p>
-          <p className="text-lg text-gray-200 mb-10 min-h-[1.75rem]">
+          <p className="text-sm md:text-lg text-gray-200 mb-4 md:mb-6 min-h-[1.25rem] md:min-h-[1.75rem]">
             <Typewriter
-              phrases={['Government Certified Yoga Instructor • Affordable Fees • 5+ Years • Call/WhatsApp 9352600526']}
+              phrases={['Govt Certified • 5+ Years • 800+ Sessions • WhatsApp 9352600526']}
               startDelay={26000}
             />
           </p>
