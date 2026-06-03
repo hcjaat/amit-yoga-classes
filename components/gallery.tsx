@@ -7,20 +7,20 @@ import { ChevronLeft, ChevronRight, Expand } from 'lucide-react';
 import { fadeInUp } from '@/lib/animations';
 
 const galleryImages = [
-  { id: 14, src: '/images/yoga/yoga-pose2.webp', alt: 'Yoga Pose 2' },
-  { id: 13, src: '/images/yoga/outdoor1.webp', alt: 'Outdoor Yoga' },
-  { id: 12, src: '/images/yoga/yoga-pose1.webp', alt: 'Yoga Pose' },
-  { id: 11, src: '/images/yoga/exercise.webp', alt: 'Exercise Pose' },
-  { id: 10, src: '/images/center-yoga.webp', alt: 'Central Yoga Pose' },
-  { id: 1, src: '/images/yoga/1.webp', alt: 'Yoga Pose 1' },
-  { id: 2, src: '/images/yoga/2.webp', alt: 'Yoga Pose 2' },
-  { id: 3, src: '/images/yoga/temple-yoga.webp', alt: 'Temple Yoga Pose' },
-  { id: 4, src: '/images/yoga/meditation-park.webp', alt: 'Park Meditation' },
-  { id: 5, src: '/images/yoga/bridge-plank.webp', alt: 'Bridge Plank Pose' },
-  { id: 6, src: '/images/yoga/outdoor-stretch.webp', alt: 'Outdoor Stretch' },
-  { id: 7, src: '/images/yoga/headstand.webp', alt: 'Headstand Pose' },
-  { id: 8, src: '/images/yoga/mountaintop-meditation.webp', alt: 'Mountaintop Meditation' },
-  { id: 9, src: '/images/yoga/mountaintop-warrior.webp', alt: 'Mountaintop Warrior Pose' },
+  { id: 1, src: '/images/yoga/yoga-pose2.webp', alt: 'Yoga Pose 2' },
+  { id: 2, src: '/images/yoga/outdoor1.webp', alt: 'Outdoor Yoga' },
+  { id: 3, src: '/images/yoga/yoga-pose1.webp', alt: 'Yoga Pose' },
+  { id: 4, src: '/images/yoga/exercise.webp', alt: 'Exercise Pose' },
+  { id: 5, src: '/images/center-yoga.webp', alt: 'Central Yoga Pose' },
+  { id: 6, src: '/images/yoga/1.webp', alt: 'Yoga Pose 1' },
+  { id: 7, src: '/images/yoga/2.webp', alt: 'Yoga Pose 2' },
+  { id: 8, src: '/images/yoga/temple-yoga.webp', alt: 'Temple Yoga Pose' },
+  { id: 9, src: '/images/yoga/meditation-park.webp', alt: 'Park Meditation' },
+  { id: 10, src: '/images/yoga/bridge-plank.webp', alt: 'Bridge Plank Pose' },
+  { id: 11, src: '/images/yoga/outdoor-stretch.webp', alt: 'Outdoor Stretch' },
+  { id: 12, src: '/images/yoga/headstand.webp', alt: 'Headstand Pose' },
+  { id: 13, src: '/images/yoga/mountaintop-meditation.webp', alt: 'Mountaintop Meditation' },
+  { id: 14, src: '/images/yoga/mountaintop-warrior.webp', alt: 'Mountaintop Warrior Pose' },
 ];
 
 export default function Gallery() {
@@ -116,12 +116,14 @@ export default function Gallery() {
             {/* Nav Arrows */}
             <button
               onClick={prev}
+              aria-label="Previous image"
               className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-yoga-primary hover:bg-white transition-all shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={next}
+              aria-label="Next image"
               className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-yoga-primary hover:bg-white transition-all shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary"
             >
               <ChevronRight className="w-5 h-5" />
@@ -138,6 +140,7 @@ export default function Gallery() {
             {galleryImages.map((_, index) => (
               <button
                 key={index}
+                aria-label={`Go to image ${index + 1}`}
                 onClick={() => {
                   setCurrent(index);
                   setAutoPlay(false);
@@ -172,7 +175,7 @@ export default function Gallery() {
               >
                 <Image
                   src={galleryImages.find(img => img.id === selectedImage)?.src || ''}
-                  alt="Gallery view"
+                  alt={galleryImages.find(img => img.id === selectedImage)?.alt || 'Gallery view'}
                   fill
                   className="object-contain"
                 />

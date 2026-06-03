@@ -82,7 +82,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.google.com" />
         <link rel="preconnect" href="https://maps.googleapis.com" />
-        <link rel="preload" href="/images/yoga/1.webp" as="image" fetchPriority="high" />
+        <link rel="preload" href="/images/yoga/yoga-pose2.webp" as="image" fetchPriority="high" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>

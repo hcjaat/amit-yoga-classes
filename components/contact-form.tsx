@@ -206,10 +206,11 @@ export default function ContactForm() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <label className="block text-sm font-medium text-yoga-primary mb-2">
+              <label htmlFor="contact-name" className="block text-sm font-medium text-yoga-primary mb-2">
                 Name *
               </label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 value={formData.name}
@@ -229,10 +230,11 @@ export default function ContactForm() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <label className="block text-sm font-medium text-yoga-primary mb-2">
+              <label htmlFor="contact-phone" className="block text-sm font-medium text-yoga-primary mb-2">
                 Phone Number *
               </label>
               <input
+                id="contact-phone"
                 type="tel"
                 name="phone"
                 value={formData.phone}
@@ -253,10 +255,11 @@ export default function ContactForm() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <label className="block text-sm font-medium text-yoga-primary mb-2">
+              <label htmlFor="contact-message" className="block text-sm font-medium text-yoga-primary mb-2">
                 Message *
               </label>
               <textarea
+                id="contact-message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { fadeInUp, fadeInLeft, fadeInRight } from '@/lib/animations';
+import { fadeInUp, fadeInRight } from '@/lib/animations';
 
 export default function About() {
   const features = [
@@ -45,7 +45,7 @@ export default function About() {
             >
               <Image
                 src="/images/yoga/meditation-park.webp"
-                alt="Amit Sir - Yoga Instructor"
+                alt="Outdoor meditation session at yoga classes"
                 fill
                 className="object-cover"
               />
