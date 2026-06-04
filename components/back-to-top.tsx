@@ -46,7 +46,13 @@ export default function BackToTop() {
           whileTap={{ scale: 0.9 }}
           aria-label="Scroll back to top"
         >
-          <FaChevronUp className="w-6 h-6 animate-pulse" />
+          <motion.span
+            style={{ perspective: 600, transformStyle: 'preserve-3d' }}
+            animate={{ rotateX: [0, 10, 0, -10, 0], rotateZ: [0, 3, 0, -3, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <FaChevronUp className="w-6 h-6" />
+          </motion.span>
         </motion.button>
       )}
     </AnimatePresence>
