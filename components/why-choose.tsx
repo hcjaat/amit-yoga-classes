@@ -1,47 +1,47 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaAward, FaHome, FaGlobeAmericas, FaClock, FaDumbbell, FaHeart, FaWallet } from 'react-icons/fa';
+import { HiCheckCircle, HiTrophy, HiHome, HiGlobeAmericas, HiClock, HiArrowsRightLeft, HiHeart, HiWallet } from 'react-icons/hi2';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
 const features = [
   {
-    icon: FaAward,
+    icon: HiTrophy,
     title: 'Government Certified',
     description: 'Certified yoga instructor with professional qualifications and credentials'
   },
   {
-    icon: FaCheckCircle,
+    icon: HiCheckCircle,
     title: 'Personalized Guidance',
     description: 'Customized yoga programs tailored to your individual needs and goals'
   },
   {
-    icon: FaHome,
+    icon: HiHome,
     title: 'Home Tuition Available',
     description: 'Convenient one-on-one sessions in the comfort of your home'
   },
   {
-    icon: FaGlobeAmericas,
+    icon: HiGlobeAmericas,
     title: 'Online Classes',
     description: 'Join from anywhere with flexible online yoga sessions'
   },
   {
-    icon: FaClock,
+    icon: HiClock,
     title: 'Flexible Timing',
     description: 'Classes scheduled according to your availability and preferences'
   },
   {
-    icon: FaDumbbell,
+    icon: HiArrowsRightLeft,
     title: 'Practical Training',
     description: 'Hands-on guidance focusing on correct posture and breathing techniques'
   },
   {
-    icon: FaHeart,
+    icon: HiHeart,
     title: 'Wellness Focused',
     description: 'Holistic approach to health, stress relief, and mental well-being'
   },
   {
-    icon: FaWallet,
+    icon: HiWallet,
     title: 'Affordable Pricing',
     description: 'Premium yoga classes at competitive and accessible rates'
   }

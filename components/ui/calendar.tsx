@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { FaChevronDown, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { HiChevronDown, HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
 import { DayButton, DayPicker, getDefaultClassNames } from 'react-day-picker'
 
 import { cn } from '@/lib/utils'
@@ -134,13 +134,13 @@ function Calendar({
         Chevron: ({ className, orientation, ...props }) => {
           if (orientation === 'left') {
             return (
-              <FaChevronLeft className={cn('size-4', className)} {...props} />
+              <HiChevronLeft className={cn('size-4', className)} {...props} />
             )
           }
 
           if (orientation === 'right') {
             return (
-              <FaChevronRight
+              <HiChevronRight
                 className={cn('size-4', className)}
                 {...props}
               />
@@ -148,7 +148,7 @@ function Calendar({
           }
 
           return (
-            <FaChevronDown className={cn('size-4', className)} {...props} />
+            <HiChevronDown className={cn('size-4', className)} {...props} />
           )
         },
         DayButton: CalendarDayButton,

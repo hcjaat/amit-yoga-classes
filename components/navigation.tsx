@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { HiBars3, HiXMark } from 'react-icons/hi2';
 import { motion } from 'framer-motion';
 
 export default function Navigation() {
@@ -85,9 +85,9 @@ export default function Navigation() {
             className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-yoga-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary"
           >
             {isOpen ? (
-              <FaTimes className="h-6 w-6" />
+              <HiXMark className="h-6 w-6" />
             ) : (
-              <FaBars className="h-6 w-6" />
+              <HiBars3 className="h-6 w-6" />
             )}
           </button>
         </div>

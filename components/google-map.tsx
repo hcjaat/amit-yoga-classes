@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaLocationArrow, FaClock, FaCar } from 'react-icons/fa';
+import { HiMapPin, HiArrowRightCircle, HiClock } from 'react-icons/hi2';
 import { fadeInUp } from '@/lib/animations';
 
 const googleMapsUrl = "https://www.google.com/maps/place/AMIT'S+YOGA+CLASSES/@26.8773894,75.7764984,17z/data=!3m1!4b1!4m6!3m5!1s0x396db5c827795157:0xc83b0265cad333e1!8m2!3d26.8773846!4d75.7790733!16s%2Fg%2F11wnf8wsw2";
@@ -38,7 +38,7 @@ export function GoogleMap() {
           <div className="p-8 md:p-10 text-white">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0">
-                <FaMapMarkerAlt className="w-7 h-7 text-white" />
+                <HiMapPin className="w-7 h-7 text-white" />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold mb-3">
@@ -55,14 +55,14 @@ export function GoogleMap() {
             {/* Additional Info */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <FaClock className="w-5 h-5 text-yoga-accent" />
+                <HiClock className="w-5 h-5 text-yoga-accent" />
                 <div>
                   <p className="text-white/70 text-xs uppercase tracking-wider">Landmark</p>
                   <p className="text-white font-medium">Near Vivek School</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <FaCar className="w-5 h-5 text-yoga-accent" />
+                <HiMapPin className="w-5 h-5 text-yoga-accent" />
                 <div>
                   <p className="text-white/70 text-xs uppercase tracking-wider">Area</p>
                   <p className="text-white font-medium">Gopal Pura Mode</p>
@@ -80,7 +80,7 @@ export function GoogleMap() {
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <FaLocationArrow className="w-5 h-5" />
+                <HiArrowRightCircle className="w-5 h-5" />
                 Get Directions
               </motion.a>
             </div>

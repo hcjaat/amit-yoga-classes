@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, VariantProps } from 'class-variance-authority'
-import { FaBars } from 'react-icons/fa'
+import { HiBars3 } from 'react-icons/hi2'
 
 import { useIsMobile } from '@/hooks/use-mobile'
 import { cn } from '@/lib/utils'
@@ -273,7 +273,7 @@ function SidebarTrigger({
       }}
       {...props}
     >
-      <FaBars />
+      <HiBars3 />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

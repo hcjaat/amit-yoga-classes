@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaHeart, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { HiHeart, HiMapPin, HiPhone, HiEnvelope } from 'react-icons/hi2';
 
 const brandIcons: Record<string, { color: string; path: string; viewBox: string }> = {
   Instagram: {
@@ -160,12 +160,12 @@ export default function Footer() {
                   href="tel:+919352600526"
                   className="flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  <FaPhone className="w-4 h-4 flex-shrink-0" />
+                  <HiPhone className="w-4 h-4 flex-shrink-0" />
                   +91 9352600526
                 </a>
               </li>
               <li className="flex gap-2 text-white/70 text-sm">
-                <FaMapMarkerAlt className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <HiMapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
                 <span>C-512, Mahesh Nagar, C-Block<br />Near Vivek School, Gopal Pura Mode<br />Jaipur, Rajasthan 302015</span>
               </li>
               <li>
@@ -173,7 +173,7 @@ export default function Footer() {
                   href="mailto:dabasamit740@gmail.com"
                   className="flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  <FaEnvelope className="w-4 h-4 flex-shrink-0" />
+                  <HiEnvelope className="w-4 h-4 flex-shrink-0" />
                   dabasamit740@gmail.com
                 </a>
               </li>
@@ -238,7 +238,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs text-white/50 flex items-center gap-1">
-            Made with <FaHeart className="w-3 h-3 text-yoga-accent fill-current" /> by Hemant
+            Made with <HiHeart className="w-3 h-3 text-yoga-accent fill-current" /> by Hemant
           </p>
         </motion.div>
       </div>

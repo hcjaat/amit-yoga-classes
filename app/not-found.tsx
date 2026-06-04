@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FaHome, FaArrowLeft } from 'react-icons/fa'
+import { HiHome, HiArrowLeft } from 'react-icons/hi2'
 
 export default function NotFound() {
   return (
@@ -32,14 +32,14 @@ export default function NotFound() {
             href="/"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yoga-primary text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200 shadow-lg"
           >
-            <FaHome className="w-5 h-5" />
+            <HiHome className="w-5 h-5" />
             Back to Home
           </Link>
           <button
             onClick={() => window.history.back()}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-yoga-primary rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 shadow-lg border border-yoga-primary/20"
           >
-            <FaArrowLeft className="w-5 h-5" />
+            <HiArrowLeft className="w-5 h-5" />
             Go Back
           </button>
         </div>

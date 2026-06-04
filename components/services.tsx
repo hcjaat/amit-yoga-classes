@@ -2,61 +2,61 @@
 
 import { motion } from 'framer-motion';
 import {
-  FaHome,
-  FaUsers,
-  FaLaptop,
-  FaLeaf,
-  FaWind,
-  FaFire,
-  FaBrain,
-  FaUser,
-  FaBolt,
-} from 'react-icons/fa';
+  HiHome,
+  HiUsers,
+  HiComputerDesktop,
+  HiGlobeAmericas,
+  HiArrowPath,
+  HiFire,
+  HiLightBulb,
+  HiUser,
+  HiBolt,
+} from 'react-icons/hi2';
 import { fadeInUp, staggerContainer, listItemVariants } from '@/lib/animations';
 
 const services = [
   {
-    icon: FaUsers,
+    icon: HiUsers,
     title: 'Center Classes',
     description: 'Group sessions at our center. Includes a special Saturday outdoor activity where we visit a new scenic spot (like nearby mountains) to meditate in nature!',
   },
   {
-    icon: FaHome,
+    icon: HiHome,
     title: 'Home Tuition',
     description: 'Personalized yoga training in the comfort of your own home',
   },
   {
-    icon: FaLaptop,
+    icon: HiComputerDesktop,
     title: 'Online Classes',
     description: 'Flexible online yoga sessions with live instruction and support',
   },
   {
-    icon: FaLeaf,
+    icon: HiGlobeAmericas,
     title: 'Meditation',
     description: 'Guided meditation sessions to calm the mind and reduce stress',
   },
   {
-    icon: FaWind,
+    icon: HiArrowPath,
     title: 'Pranayama',
     description: 'Breathing exercises to enhance energy and mental clarity',
   },
   {
-    icon: FaFire,
+    icon: HiFire,
     title: 'Weight Loss Program',
     description: 'Targeted yoga practice combined with wellness guidance',
   },
   {
-    icon: FaBrain,
+    icon: HiLightBulb,
     title: 'Stress Management',
     description: 'Holistic approach to managing stress and anxiety',
   },
   {
-    icon: FaUser,
+    icon: HiUser,
     title: 'Senior Yoga',
     description: 'Gentle and safe yoga practices designed for seniors',
   },
   {
-    icon: FaBolt,
+    icon: HiBolt,
     title: 'Flexibility Training',
     description: 'Improve flexibility and mobility through targeted practice',
   },

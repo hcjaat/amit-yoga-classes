@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import * as ContextMenuPrimitive from '@radix-ui/react-context-menu'
-import { FaCheck, FaChevronRight, FaCircle } from 'react-icons/fa'
+import { HiCheck, HiChevronRight } from 'react-icons/hi2'
 
 import { cn } from '@/lib/utils'
 
@@ -72,7 +72,7 @@ function ContextMenuSubTrigger({
       {...props}
     >
       {children}
-      <FaChevronRight className="ml-auto" />
+      <HiChevronRight className="ml-auto" />
     </ContextMenuPrimitive.SubTrigger>
   )
 }
@@ -152,7 +152,7 @@ function ContextMenuCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <FaCheck className="size-4" />
+          <HiCheck className="size-4" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -176,7 +176,7 @@ function ContextMenuRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <FaCircle className="size-2 fill-current" />
+          <span className="block h-1.5 w-1.5 rounded-full bg-current fill-current" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}

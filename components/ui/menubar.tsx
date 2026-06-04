@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import * as MenubarPrimitive from '@radix-ui/react-menubar'
-import { FaCheck, FaChevronRight, FaCircle } from 'react-icons/fa'
+import { HiCheck, HiChevronRight } from 'react-icons/hi2'
 
 import { cn } from '@/lib/utils'
 
@@ -129,7 +129,7 @@ function MenubarCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <FaCheck className="size-4" />
+          <HiCheck className="size-4" />
         </MenubarPrimitive.ItemIndicator>
       </span>
       {children}
@@ -153,7 +153,7 @@ function MenubarRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <FaCircle className="size-2 fill-current" />
+          <span className="block h-1.5 w-1.5 rounded-full bg-current fill-current" />
         </MenubarPrimitive.ItemIndicator>
       </span>
       {children}
@@ -235,7 +235,7 @@ function MenubarSubTrigger({
       {...props}
     >
       {children}
-      <FaChevronRight className="ml-auto h-4 w-4" />
+      <HiChevronRight className="ml-auto h-4 w-4" />
     </MenubarPrimitive.SubTrigger>
   )
 }

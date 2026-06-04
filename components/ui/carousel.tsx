@@ -4,7 +4,7 @@ import * as React from 'react'
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import { HiArrowLeft, HiArrowRight } from 'react-icons/hi2'
 
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -195,7 +195,7 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <FaArrowLeft />
+      <HiArrowLeft />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -225,7 +225,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <FaArrowRight />
+      <HiArrowRight />
       <span className="sr-only">Next slide</span>
     </Button>
   )

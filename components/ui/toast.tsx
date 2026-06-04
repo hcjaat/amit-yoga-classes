@@ -3,7 +3,7 @@
 import * as React from 'react'
 import * as ToastPrimitives from '@radix-ui/react-toast'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { FaTimes } from 'react-icons/fa'
+import { HiXMark } from 'react-icons/hi2'
 
 import { cn } from '@/lib/utils'
 
@@ -83,7 +83,7 @@ const ToastClose = React.forwardRef<
     toast-close=""
     {...props}
   >
-    <FaTimes className="h-4 w-4" />
+    <HiXMark className="h-4 w-4" />
   </ToastPrimitives.Close>
 ))
 ToastClose.displayName = ToastPrimitives.Close.displayName

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa';
+import { HiChevronLeft, HiChevronRight, HiStar } from 'react-icons/hi2';
 import { fadeInUp } from '@/lib/animations';
 
 const testimonials = [
@@ -101,7 +101,7 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonials[current].rating }).map((_, i) => (
-                  <FaStar key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <HiStar key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
 
@@ -131,7 +131,7 @@ export default function Testimonials() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaChevronLeft className="w-6 h-6" />
+              <HiChevronLeft className="w-6 h-6" />
             </motion.button>
 
             {/* Indicators */}
@@ -160,7 +160,7 @@ export default function Testimonials() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaChevronRight className="w-6 h-6" />
+              <HiChevronRight className="w-6 h-6" />
             </motion.button>
           </div>
         </motion.div>

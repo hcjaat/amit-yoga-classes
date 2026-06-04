@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaQuoteLeft } from 'react-icons/fa';
+import { HiChatBubbleLeftEllipsis } from 'react-icons/hi2';
 import { fadeInUp } from '@/lib/animations';
 
 export default function QuoteBanner() {
@@ -27,7 +27,7 @@ export default function QuoteBanner() {
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <FaQuoteLeft className="w-6 h-6 sm:w-8 sm:h-8 text-yoga-secondary/20 mb-2 sm:mb-4 rotate-180" />
+            <HiChatBubbleLeftEllipsis className="w-6 h-6 sm:w-8 sm:h-8 text-yoga-secondary/20 mb-2 sm:mb-4 rotate-180" />
           </motion.div>
 
           {/* Deep italicized serif quote text */}

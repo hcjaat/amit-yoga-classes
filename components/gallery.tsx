@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChevronLeft, FaChevronRight, FaExpand } from 'react-icons/fa';
+import { HiChevronLeft, HiChevronRight, HiArrowsPointingOut } from 'react-icons/hi2';
 import { fadeInUp } from '@/lib/animations';
 
 const galleryImages = [
@@ -105,7 +105,7 @@ export default function Gallery() {
                   />
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300 flex items-end justify-end p-4">
                     <span className="bg-white/80 backdrop-blur-sm text-yoga-primary text-xs font-medium px-3 py-1.5 rounded-full flex items-center gap-1.5">
-                      <FaExpand className="w-3.5 h-3.5" />
+                      <HiArrowsPointingOut className="w-3.5 h-3.5" />
                       View
                     </span>
                   </div>
@@ -119,14 +119,14 @@ export default function Gallery() {
               aria-label="Previous image"
               className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-yoga-primary hover:bg-white transition-all shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary"
             >
-              <FaChevronLeft className="w-5 h-5" />
+              <HiChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={next}
               aria-label="Next image"
               className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-yoga-primary hover:bg-white transition-all shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary"
             >
-              <FaChevronRight className="w-5 h-5" />
+              <HiChevronRight className="w-5 h-5" />
             </button>
 
             {/* Image Counter */}

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChevronUp } from 'react-icons/fa';
+import { HiChevronUp } from 'react-icons/hi2';
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,7 +51,7 @@ export default function BackToTop() {
             animate={{ rotateX: [0, 10, 0, -10, 0], rotateZ: [0, 3, 0, -3, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <FaChevronUp className="w-6 h-6" />
+            <HiChevronUp className="w-6 h-6" />
           </motion.span>
         </motion.button>
       )}
