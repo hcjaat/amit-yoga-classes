@@ -43,6 +43,8 @@ export const metadata: Metadata = {
     'yoga classes near Mahesh Nagar',
     'best yoga teacher in Jaipur',
     'yoga classes whatsapp number',
+    'yoga camp for kids',
+    'yoga camp for kids near me',
   ],
   openGraph: {
     title: "AMIT'S YOGA CLASSES Jaipur — Certified Yoga Teacher",
