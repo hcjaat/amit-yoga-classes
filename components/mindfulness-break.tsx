@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Brain, RefreshCw, X } from 'lucide-react';
+import { FaStar, FaBrain, FaSync, FaTimes } from 'react-icons/fa';
 
 type BreathState = 'idle' | 'inhale' | 'hold' | 'exhale';
 
@@ -93,7 +93,7 @@ export default function MindfulnessBreak() {
           className="mb-8"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold tracking-wider text-yoga-accent mb-4 uppercase">
-            <Brain className="w-3.5 h-3.5" />
+            <FaBrain className="w-3.5 h-3.5" />
             Mindfulness Zone
           </div>
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
@@ -122,7 +122,7 @@ export default function MindfulnessBreak() {
                 {/* Minimal preview circle */}
                 <div className="relative w-24 h-24 sm:w-28 sm:h-28 mb-6 sm:mb-8 rounded-full border-2 border-white/20 flex items-center justify-center">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-yoga-accent/15 rounded-full animate-pulse flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-yoga-accent" />
+                    <FaStar className="w-6 h-6 sm:w-8 sm:h-8 text-yoga-accent" />
                   </div>
                 </div>
 
@@ -156,7 +156,7 @@ export default function MindfulnessBreak() {
                     className="p-1.5 sm:p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
                     title="Exit"
                   >
-                    <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    <FaTimes className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </button>
                 </div>
 
@@ -224,7 +224,7 @@ export default function MindfulnessBreak() {
                   onClick={handleStop}
                   className="flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold text-xs tracking-wider uppercase transition-colors"
                 >
-                  <RefreshCw className="w-3.5 h-3.5" />
+                  <FaSync className="w-3.5 h-3.5" />
                   Stop Exercise
                 </button>
               </motion.div>

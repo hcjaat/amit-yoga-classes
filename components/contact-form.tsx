@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
-import { Send, Phone, MessageCircle, MapPin, Mail } from 'lucide-react';
+import { FaPaperPlane, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import { fadeInUp, fadeInLeft, fadeInRight } from '@/lib/animations';
 
 export default function ContactForm() {
@@ -118,7 +118,7 @@ export default function ContactForm() {
               animate={{ rotateX: [0, 10, 0, -10, 0], rotateZ: [0, 3, 0, -3, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <Phone className="w-8 h-8 text-white" />
+              <FaPhone className="w-8 h-8 text-white" />
             </motion.div>
             <h3 className="font-serif text-xl font-bold text-yoga-primary mb-2">
               Call Now
@@ -145,7 +145,7 @@ export default function ContactForm() {
               animate={{ rotateX: [0, 10, 0, -10, 0], rotateZ: [0, 3, 0, -3, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
             >
-              <MessageCircle className="w-8 h-8 text-white" />
+              <FaWhatsapp className="w-8 h-8 text-white" />
             </motion.div>
             <h3 className="font-serif text-xl font-bold text-yoga-primary mb-2">
               WhatsApp
@@ -169,7 +169,7 @@ export default function ContactForm() {
               animate={{ rotateX: [0, 10, 0, -10, 0], rotateZ: [0, 3, 0, -3, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.4 }}
             >
-              <MapPin className="w-8 h-8 text-white" />
+              <FaMapMarkerAlt className="w-8 h-8 text-white" />
             </motion.div>
             <h3 className="font-serif text-xl font-bold text-yoga-primary mb-2">
               Location
@@ -185,7 +185,7 @@ export default function ContactForm() {
                 href="mailto:dabasamit740@gmail.com"
                 className="inline-flex items-center gap-2 text-yoga-primary hover:underline text-sm font-medium"
               >
-                <Mail className="w-4 h-4" />
+                <FaEnvelope className="w-4 h-4" />
                 dabasamit740@gmail.com
               </a>
             </div>
@@ -290,7 +290,7 @@ export default function ContactForm() {
                   animate={{ rotateX: [0, 8, 0, -8, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
                 >
-                  <Send className="w-5 h-5" />
+                  <FaPaperPlane className="w-5 h-5" />
                 </motion.span>
               )}
               {isSubmitting ? 'Opening WhatsApp...' : 'Submit via WhatsApp'}

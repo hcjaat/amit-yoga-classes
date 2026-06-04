@@ -2,61 +2,61 @@
 
 import { motion } from 'framer-motion';
 import {
-  Home,
-  Users,
-  Laptop,
-  Leaf,
-  Wind,
-  Flame,
-  Brain,
-  User2,
-  Zap,
-} from 'lucide-react';
+  FaHome,
+  FaUsers,
+  FaLaptop,
+  FaLeaf,
+  FaWind,
+  FaFire,
+  FaBrain,
+  FaUser,
+  FaBolt,
+} from 'react-icons/fa';
 import { fadeInUp, staggerContainer, listItemVariants } from '@/lib/animations';
 
 const services = [
   {
-    icon: Users,
+    icon: FaUsers,
     title: 'Center Classes',
     description: 'Group sessions at our center. Includes a special Saturday outdoor activity where we visit a new scenic spot (like nearby mountains) to meditate in nature!',
   },
   {
-    icon: Home,
+    icon: FaHome,
     title: 'Home Tuition',
     description: 'Personalized yoga training in the comfort of your own home',
   },
   {
-    icon: Laptop,
+    icon: FaLaptop,
     title: 'Online Classes',
     description: 'Flexible online yoga sessions with live instruction and support',
   },
   {
-    icon: Leaf,
+    icon: FaLeaf,
     title: 'Meditation',
     description: 'Guided meditation sessions to calm the mind and reduce stress',
   },
   {
-    icon: Wind,
+    icon: FaWind,
     title: 'Pranayama',
     description: 'Breathing exercises to enhance energy and mental clarity',
   },
   {
-    icon: Flame,
+    icon: FaFire,
     title: 'Weight Loss Program',
     description: 'Targeted yoga practice combined with wellness guidance',
   },
   {
-    icon: Brain,
+    icon: FaBrain,
     title: 'Stress Management',
     description: 'Holistic approach to managing stress and anxiety',
   },
   {
-    icon: User2,
+    icon: FaUser,
     title: 'Senior Yoga',
     description: 'Gentle and safe yoga practices designed for seniors',
   },
   {
-    icon: Zap,
+    icon: FaBolt,
     title: 'Flexibility Training',
     description: 'Improve flexibility and mobility through targeted practice',
   },

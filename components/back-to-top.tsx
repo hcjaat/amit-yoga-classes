@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronUp } from 'lucide-react';
+import { FaChevronUp } from 'react-icons/fa';
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +46,7 @@ export default function BackToTop() {
           whileTap={{ scale: 0.9 }}
           aria-label="Scroll back to top"
         >
-          <ChevronUp className="w-6 h-6 animate-pulse" />
+          <FaChevronUp className="w-6 h-6 animate-pulse" />
         </motion.button>
       )}
     </AnimatePresence>

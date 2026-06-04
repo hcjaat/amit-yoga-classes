@@ -1,47 +1,47 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, Award, Home, Globe, Clock, Dumbbell, Heart, Wallet } from 'lucide-react';
+import { FaCheckCircle, FaAward, FaHome, FaGlobeAmericas, FaClock, FaDumbbell, FaHeart, FaWallet } from 'react-icons/fa';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
 const features = [
   {
-    icon: Award,
+    icon: FaAward,
     title: 'Government Certified',
     description: 'Certified yoga instructor with professional qualifications and credentials'
   },
   {
-    icon: CheckCircle,
+    icon: FaCheckCircle,
     title: 'Personalized Guidance',
     description: 'Customized yoga programs tailored to your individual needs and goals'
   },
   {
-    icon: Home,
+    icon: FaHome,
     title: 'Home Tuition Available',
     description: 'Convenient one-on-one sessions in the comfort of your home'
   },
   {
-    icon: Globe,
+    icon: FaGlobeAmericas,
     title: 'Online Classes',
     description: 'Join from anywhere with flexible online yoga sessions'
   },
   {
-    icon: Clock,
+    icon: FaClock,
     title: 'Flexible Timing',
     description: 'Classes scheduled according to your availability and preferences'
   },
   {
-    icon: Dumbbell,
+    icon: FaDumbbell,
     title: 'Practical Training',
     description: 'Hands-on guidance focusing on correct posture and breathing techniques'
   },
   {
-    icon: Heart,
+    icon: FaHeart,
     title: 'Wellness Focused',
     description: 'Holistic approach to health, stress relief, and mental well-being'
   },
   {
-    icon: Wallet,
+    icon: FaWallet,
     title: 'Affordable Pricing',
     description: 'Premium yoga classes at competitive and accessible rates'
   }

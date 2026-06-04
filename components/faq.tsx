@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Minus } from 'lucide-react';
+import { FaPlus, FaMinus } from 'react-icons/fa';
 import { fadeInUp, staggerContainer, listItemVariants } from '@/lib/animations';
 
 const faqs = [
@@ -76,9 +76,9 @@ export default function FAQ() {
                   className="flex-shrink-0 ml-4"
                 >
                   {expanded === index ? (
-                    <Minus className="w-5 h-5 text-yoga-primary" />
+                    <FaMinus className="w-5 h-5 text-yoga-primary" />
                   ) : (
-                    <Plus className="w-5 h-5 text-yoga-primary" />
+                    <FaPlus className="w-5 h-5 text-yoga-primary" />
                   )}
                 </motion.div>
               </motion.button>

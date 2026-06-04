@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { Phone } from 'lucide-react';
+import { FaPhone } from 'react-icons/fa';
 import { fadeInUp } from '@/lib/animations';
 
 const heroImages = [
@@ -214,7 +214,7 @@ export default function Hero() {
               href="tel:+919352600526"
               className="px-8 py-4 bg-white text-yoga-primary rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yoga-primary focus-visible:ring-offset-2"
             >
-              <Phone className="w-5 h-5" />
+              <FaPhone className="w-5 h-5" />
               Call Now
             </MagneticButton>
 
