@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { fadeInUp } from '@/lib/animations';
 
 const heroImages = [
@@ -217,15 +217,7 @@ export default function Hero() {
               <Phone className="w-5 h-5" />
               Call Now
             </MagneticButton>
-            <MagneticButton
-              href="https://wa.me/919352600526?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20yoga%20classes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-green-500"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp Now
-            </MagneticButton>
+
           </motion.div>
         </motion.div>
       </div>
