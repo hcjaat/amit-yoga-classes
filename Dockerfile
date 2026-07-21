@@ -1,4 +1,3 @@
-# ---------- Builder ----------
 FROM node:22-alpine AS builder
 
 WORKDIR /app
@@ -7,17 +6,14 @@ RUN corepack enable
 
 COPY package.json pnpm-lock.yaml ./
 
-# Allow sharp to run install scripts
-ENV PNPM_BUILD_POLICY=allow
-RUN pnpm config set onlyBuiltDependencies sharp
+RUN corepack prepare pnpm@10.17.0 --activate
 
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile --ignore-scripts=false
 
 COPY . .
 
 RUN pnpm run build
 
-# ---------- Runtime ----------
 FROM nginx:alpine
 
 COPY --from=builder /app/out /usr/share/nginx/html
