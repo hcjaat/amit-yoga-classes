@@ -7,6 +7,10 @@ RUN corepack enable
 
 COPY package.json pnpm-lock.yaml ./
 
+# Allow sharp to run install scripts
+ENV PNPM_BUILD_POLICY=allow
+RUN pnpm config set onlyBuiltDependencies sharp
+
 RUN pnpm install --frozen-lockfile
 
 COPY . .
